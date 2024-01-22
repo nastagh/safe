@@ -1,0 +1,22 @@
+$buttonSize:45px;
+
+.numberButton {
+  width: $buttonSize;
+  height: $buttonSize;
+  // background-color: #cfbffe;
+  border: solid black 1px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #feec98;
+  }
+}
+
+.unChecked{
+  background-color: #cfbffe;
+}
+
+.checked{
+  background-color: #feec98;
+}

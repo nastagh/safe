@@ -1,0 +1,28 @@
+$controlButtonHeigt:45px;
+
+
+.controlButton{
+  border: solid black 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: $controlButtonHeigt;
+  width: 120px;
+  text-transform: uppercase;
+}
+
+.controlButton-green {
+  background-color: #81c91d;
+
+  &:hover {
+    background-color: #5c9908;
+  }
+}
+
+.controlButton-black {
+  background-color: black;
+  color: white;
+
+  &:hover {
+    background-color: #666561;
+  }
+}

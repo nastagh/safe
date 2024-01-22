@@ -1,0 +1,5 @@
+.numbers-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
