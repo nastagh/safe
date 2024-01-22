@@ -7,6 +7,7 @@
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-width: 100vw;
@@ -24,5 +25,17 @@
   flex-direction: column;
   margin-left: 40px;
   gap: 15px;
+}
+
+.message{
+  height: 20px;
+}
+
+.invisible{
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 

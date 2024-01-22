@@ -1,26 +1,25 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import '../styles/controlButtons.scss';
 
 interface ControlProps {
   value: string;
+  onClick: (value: string) => void;
 }
 
 
 export class ControlButtons extends Component<ControlProps> {
 
+  handleClick = (value: string) => {
+    this.props.onClick(value);
+  }
+
   render() {
-    if(parseInt(this.props.value)) {
       return (
-        <button className='controlButton controlButton-black'>
+        <button
+          className='controlButton controlButton-green'
+          onClick={() => this.handleClick(this.props.value)}>
           {this.props.value}
         </button>
       );
-    } else {
-      return (
-        <button className='controlButton controlButton-green'>
-          {this.props.value}
-        </button>
-      );
-    }
   }
 }

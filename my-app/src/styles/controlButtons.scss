@@ -21,6 +21,7 @@ $controlButtonHeigt:45px;
 .controlButton-black {
   background-color: black;
   color: white;
+  cursor: default;
 
   &:hover {
     background-color: #666561;
