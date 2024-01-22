@@ -6,21 +6,19 @@ import React from 'react';
 
 class App extends React.Component {
 
-  state: { selectedValues: number[], isValid: boolean, message: string } = {
+  state: { selectedValues: number[],  message: string } = {
     selectedValues: [],
-    isValid: false,
     message: ''
   }
 
   handleClick = (value: string) => {
     switch (value) {
       case 'Clear':
-        this.setState({ selectedValues: [], isValid: false, message: '' })
+        this.setState({ selectedValues: [], message: '' })
         break;
       case 'Check':
         if (parseInt(this.state.selectedValues.join('')) === ourCode ) {
-          this.setState({ isValid: true })
-          this.setState({ message: 'Correct' })
+          this.setState({  message: 'Correct' })
         } else {
           this.setState({ message: 'Incorrect' })
         }

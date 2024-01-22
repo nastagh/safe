@@ -10,9 +10,9 @@ interface NumbersContainerProps {
 
 export class NumbersContainer extends Component<NumbersContainerProps> {
 
-  handleClick = (value: number) => {
-    this.props.onClick(value);
-  }
+  // handleClick = (value: number) => {
+  //   this.props.onClick(value);
+  // }
 
   render(): React.ReactNode {
     return (
@@ -22,7 +22,7 @@ export class NumbersContainer extends Component<NumbersContainerProps> {
             <NumberItem
               value={item}
               key={item}
-              onClick={this.handleClick}
+              onClick={this.props.onClick}
               clicked={this.props.selectedValues.includes(item)} />
           )
         })}
